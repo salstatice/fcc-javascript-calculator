@@ -1,0 +1,134 @@
+/*Achromatopsia
+$light1: #CACACA;
+$light2: #ECECEC;
+$light3: #E5E5E5;
+$dark1: #8A8A8A;
+$dark2: #6B6B6B;
+$dark3: #444444;
+$button: #5D5D5D;
+$clear: #7E7E7E;
+$equal: #555555;
+*/
+/*Protanopia
+$light1: #BEBEE3;
+$light2: #ECECD1;
+$light3: #E1E1D1;
+$dark1: #A2A17E;
+$dark2: #A2A17E;
+$dark3: #4B4B46;
+$button: #575766;
+$clear: #A1A03F;
+$equal: #4B4B7B;
+*/
+/*Tritanopia
+$light1: #B0DFDE;
+$light2: #E2DBDE; 
+$light3: #D2DADC;
+$dark1: #C97978;
+$dark2: #946665;
+$dark3: #5A4242;
+$button: #506565;
+$clear: #CD4849;
+$equal: #44716F;
+*/
+body {
+  background-color: #AFD2E9;
+  font-family: VT323, monospace;
+}
+
+#app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#appWrapper {
+  background-color: #5C374C;
+  width: 350px;
+  padding: 10px;
+  margin: 60px auto;
+  border: 5px outset #EEE;
+}
+
+#displayWrapper {
+  background-color: #985277;
+  padding: 5px 10px;
+  width: 300px;
+  height: 110px;
+  margin: 10px auto 15px auto;
+  text-align: right;
+  border: 2px inset #CE6A85;
+  display: relative;
+}
+#displayWrapper #operation {
+  height: 40%;
+  width: 100%;
+  padding: 10px 2px;
+  color: #D1F6C6;
+  font-size: 20px;
+  overflow-wrap: break-word;
+}
+#displayWrapper #display {
+  height: 30%;
+  width: 100%;
+  padding: 10px 2px;
+  color: #E1FBC4;
+  font-size: 35px;
+}
+
+#buttonsWrapper {
+  margin: auto;
+  width: 320px;
+  height: 350px;
+  border: 1px groove #AFD2E9;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+#buttonsWrapper #clear {
+  grid-column: 1/3;
+  grid-row: 1;
+  background-color: #d36135;
+}
+#buttonsWrapper #divide {
+  grid-column: 3/4;
+  grid-row: 1;
+}
+#buttonsWrapper #multiply {
+  grid-column: 4/5;
+  grid-row: 1;
+}
+#buttonsWrapper #nine {
+  grid-column: 1/2;
+  grid-row: 2;
+}
+#buttonsWrapper #eight {
+  grid-column: 2/3;
+  grid-row: 2;
+}
+#buttonsWrapper #seven {
+  grid-column: 3/4;
+  grid-row: 2;
+}
+#buttonsWrapper #subtract {
+  grid-column: 4/5;
+  grid-row: 2;
+}
+#buttonsWrapper #add {
+  grid-column: 4/5;
+  grid-row: 3;
+}
+#buttonsWrapper #equals {
+  grid-column: 4/5;
+  grid-row: 4/6;
+  background-color: #445588;
+}
+#buttonsWrapper #zero {
+  grid-column: 1/3;
+  grid-row: 5;
+}
+
+button {
+  background-color: #4f6367;
+  color: white;
+}
